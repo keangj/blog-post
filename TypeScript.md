@@ -8,9 +8,65 @@ tags:
 
 TypeScript 是 JavaScript 的超集
 
+## TypeScript 支持的类型
+
+``` ts
+const undefine: undefined = undefined
+const e: null = null
+const bool: boolean = true
+const number: number = 123
+const string: string = 'string'
+const big: bigint = 123n
+const symbol: symbol = Symbol()
+const obj: object = {}
+// 数组
+const arr: number[] = [1, 2, 3]
+const arr2: Array<number | string> = [1, '']	// 泛型
+// 函数
+const fn: (a: number, b: number) => number = (a, b) => a + b
+const fn2 = (a: number, b: number) => a + b
+type Fn = (a: number, b: number) => number
+const fn3:Fn = (a, b) => a + b
+interface Fn2 {
+  (a: number, b: number): number,
+  attr: string
+}
+const fn4 =  (a: number, b: number) => number
+fn4.attr = ''
+
+// any 可以是任何值
+let any: any = undefined
+any = null
+any = ''
+any = []
+
+// 未知
+let a: unknown 
+type T = { name: string }
+a.name	// 类型“unknown”上不存在属性“name”。ts(2339)
+(a as T).name
+
+// never, 不能将任何值赋给 never
+let a: never = 1	// error
+let a: never = ''	// error
+let a: never = []	// error
+let a: never = {}	// error
+type T = number & string	// 没有任何值属于 number 和 string 类型，所以 type T = never
+
+// 元组
+let arr: [number, string, boolean] = [1, '', true]	// 固定长度数组
+
+// class 可以当作类型使用
+class T {}
+const a: T = new T()
+
+```
+
+
+
 ## 高级类型
 
-- 与
+- 交叉类型
 
 ``` ts
 interface x {
@@ -30,7 +86,7 @@ const z: x & y = {
 }
 ```
 
-- 或
+- 联合类型
 
 ``` ts
 interface x {
@@ -177,3 +233,23 @@ function fn (params: Props) {
   }
 }
 ```
+
+- 泛型
+
+``` ts
+type Add<T> = (a: T, b: T) => T
+const add: Add<number> = (a, b) => a + b	// 在使用时才确定泛型的类型
+```
+
+- 重载
+
+``` ts
+function add(a: number, b:number): number
+function add(a: string, b:string): string
+function add(a: any, b:any): any {}
+/
+add(1, 2)
+add('hello', 'world')
+add('hello', 1)	// error
+```
+

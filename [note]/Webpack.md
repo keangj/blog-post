@@ -138,7 +138,6 @@ use: {
 }
 ```
 
-### 
 
 ### 添加 `eslint`
 
@@ -164,9 +163,7 @@ module.exports = {
 }
 ```
 
-### 
-
-添加 `react`规则
+### 添加 `react`规则
 
 安装 `eslint` 依赖
 
