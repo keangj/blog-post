@@ -2,6 +2,7 @@
 title: vs code 快捷键
 date: 2018-03-28 21:58:33
 tags:
+cover: https://i1.wp.com/buralog.jp/wp-content/uploads/2019/07/visual-sutdio-code-logo.png?fit=480%2C240&ssl=1
 ---
 1. 注释：
   -   a) 单行注释：[ctrl+k,ctrl+c] 或 ctrl+/

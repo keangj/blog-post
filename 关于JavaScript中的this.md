@@ -2,6 +2,7 @@
 title: 关于 JavaScript 中 this 对象
 date: 2018-09-09 11:34:37
 tags: JavaScript
+cover: https://library.kissclipart.com/20181128/tsw/kissclipart-orange-clipart-ecmascript-javascript-ecma-internat-3885764678295034.png
 ---
 
 # this

@@ -1,7 +1,8 @@
 ---
 title: Vue组件通信
 date: 2019-03-01 21:50:12
-tags:
+tags:	Vue
+cover:  https://miro.medium.com/max/1200/1*qHsE-PM5TLmqzmYjmlr6-A.png
 ---
 
 # Vue 组件通信

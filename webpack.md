@@ -1,7 +1,9 @@
 ---
 title: webpack
 date: 2018-03-31 13:46:52
-tags:
+tags: webpack
+categories: webpack
+cover: https://raw.githubusercontent.com/webpack/media/master/logo/logo-on-white-bg.png
 ---
 
 ``` js

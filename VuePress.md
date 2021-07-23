@@ -1,7 +1,8 @@
 ---
 title: VuePress
 date: 2018-12-17 18:03:50
-tags:
+tags: VuePress
+cover:  https://miro.medium.com/max/1200/1*qHsE-PM5TLmqzmYjmlr6-A.png
 ---
 # VuePress
 
@@ -124,7 +125,7 @@ module.exports = {
 }
 ```
   - sidebar 的分组
-  
+
   新建 `components/button.md` 并添加以下内容
   ```markdown
     ---
@@ -159,5 +160,5 @@ module.exports = {
   ```
 到这里基本配置就完成了
 ![](demo.png)
-  
+
   

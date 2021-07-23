@@ -1,7 +1,8 @@
 ---
-title: MongoDB
+title: mongoDB
 date: 2019-04-05 20:17:14
-tags:
+tags: MongoDB
+cover: https://1000logos.net/wp-content/uploads/2020/08/MongoDB-Logo.png
 ---
 
 # mongoDB
@@ -14,8 +15,9 @@ tags:
 
     <!-- ```sh
       use test
+    
     ``` -->
-
+    
 - 删除  
     `db.dropDatabase()`  
     删除数据库

@@ -4,6 +4,7 @@ date: 2018-02-18 18:11:46
 updated:
 tags: CSS
 categories: CSS
+cover: https://titangene.github.io/images/cover/css.png
 ---
 ## Media Queries 
 ### Media Queries使用方法
