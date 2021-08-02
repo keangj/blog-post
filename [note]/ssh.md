@@ -43,3 +43,25 @@ clip < ~/.ssh/id_ed25519.pub
 ```
 
 或者找到 `.ssh` 文件夹里的 `.pub` 文件 
+
+### 使用命令行登录服务器
+
+``` sh
+ssh -i ~/.ssh/id_ed25519.pub <用户名>@<服务器 ip> -p 23
+```
+
+- `-i` 指定私钥
+- `-p` 指定端口
+
+配置 `config`
+
+``` 
+# 服务器名
+Host <服务器名>
+    HostName <服务器 IP>
+    User <用户名>
+    IdentityFile <密钥位置>
+```
+
+配置后可使用 `ssh <服务器名>` 登录
+
